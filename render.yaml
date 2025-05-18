@@ -16,3 +16,5 @@ services:
         value: ss9waNfHEws4pUHcf1UX4cjC7B1fLfk0
       - key: POSTGRES_HOST
         value: dpg-d0kr48t6ubrc73bhdrng-a
+      - key: DJANGO_SECRET_KEY
+        value: some_product_secret
