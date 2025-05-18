@@ -17,4 +17,6 @@ services:
       - key: POSTGRES_HOST
         value: dpg-d0kr48t6ubrc73bhdrng-a
       - key: DJANGO_SECRET_KEY
-        value: some_product_secret
+        value: ws6^qj7hpi*j^ul%e(@$l+-*+a$_g0el89=78=i@%rzg$es3ww
+      - key: POSTGRES_PORT
+        value: 5432

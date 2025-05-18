@@ -89,12 +89,12 @@ DATABASES = {
         "USER": os.environ.get("POSTGRES_USER", "postgres"),
         "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "tkcw2004"),
         "HOST": os.environ.get("POSTGRES_HOST"),
-        "PORT": "5432",  
+        "PORT": os.environ.get("POSTGRES_PORT", "5432"),
     }
 }
 
-SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret")
-DEBUG = os.getenv("DEBUG", "False") == "True"
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "fallback-secret")
+DEBUG = os.environ.get("DEBUG", "False") == "True"
 
 
 # Password validation
