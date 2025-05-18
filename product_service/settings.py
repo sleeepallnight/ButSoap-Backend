@@ -88,7 +88,7 @@ DATABASES = {
         "NAME": os.environ.get("POSTGRES_DB", "django_soap"),
         "USER": os.environ.get("POSTGRES_USER", "postgres"),
         "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "tkcw2004"),
-        "HOST": os.environ.get('POSTGRES_HOST'),
+        "HOST": os.environ.get("POSTGRES_HOST"),
         "PORT": "5432",  
     }
 }
