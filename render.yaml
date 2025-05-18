@@ -1,12 +1,13 @@
 services:
   - type: web
     name: butsoap-backend
-    env: docker
+    env: python
     plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python manage.py runserver 0.0.0.0:$PORT"
     region: singapore
     branch: main
     rootDir: product_service
-    dockerfilePath: Dockerfile
     envVars:
       - key: DJANGO_SECRET_KEY
         sync: false
